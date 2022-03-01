@@ -36,7 +36,7 @@ public class Solution {
 
     public static void main(String[] args) {
         ListNode head = null, next = null;
-        for (int ii = 0; ii < 1; ii++) {
+        for (int ii = 0; ii < 10; ii++) {
             if (head == null) {
                 head = next = new ListNode(ii);
                 head.next = null;
@@ -48,6 +48,7 @@ public class Solution {
         }
 
         PrintList(head);
+        System.out.println("\nReversed: ");
         Solution solution = new Solution();
         ListNode reversedHead = solution.ReverseList(head);
         PrintList(reversedHead);
